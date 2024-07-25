@@ -14,12 +14,7 @@ Route::group(["middleware" => ["auth:sanctum"]], function(){
     Route::get("profile", [ApiController::class, "profile"]);
     Route::get("logout", [ApiController::class, "logout"]);
 
-    // PATIENT Routes
-    Route::get('patient', [PatientController::class, "index"]);
-    // DOCTOR Routes
-    // APPOINTMENT Routes
-    // MEDICAL RECORDS Routes
-    // SPECIALITY Routes
+    // more routes ..
 });
 
 //Route::get('/user', function (Request $request) {
